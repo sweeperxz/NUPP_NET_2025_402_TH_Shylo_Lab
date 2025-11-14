@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "University.Infrastructure", "University.Infrastructure\University.Infrastructure.csproj", "{EAE4A230-51AA-43F0-9B1C-57D92C962D12}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "University.REST", "University.REST\University.REST.csproj", "{B1F6BAF0-245B-4559-A98F-E6CEB11ED4F4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,6 +14,10 @@ Global
 		{EAE4A230-51AA-43F0-9B1C-57D92C962D12}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EAE4A230-51AA-43F0-9B1C-57D92C962D12}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EAE4A230-51AA-43F0-9B1C-57D92C962D12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1F6BAF0-245B-4559-A98F-E6CEB11ED4F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1F6BAF0-245B-4559-A98F-E6CEB11ED4F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1F6BAF0-245B-4559-A98F-E6CEB11ED4F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1F6BAF0-245B-4559-A98F-E6CEB11ED4F4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 	EndGlobalSection

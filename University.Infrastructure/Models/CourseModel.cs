@@ -3,6 +3,7 @@ namespace University.Infrastructure.Models;
 public class CourseModel
 {
     public int Id { get; set; }
+    public Guid ExternalId { get; set; } = Guid.NewGuid();
     public string? Title { get; set; }
     public int Credits { get; set; }
 
