@@ -5,11 +5,8 @@ using University.Infrastructure.Models;
 
 public class UniversityContext : DbContext
 {
-    public string FilePath { get; }
-
-    public UniversityContext(string filePath)
+    public UniversityContext(DbContextOptions<UniversityContext> options) : base(options)
     {
-        FilePath = filePath;
     }
 
     public DbSet<PersonModel> Persons { get; set; } = null!;
@@ -17,13 +14,6 @@ public class UniversityContext : DbContext
     public DbSet<CourseModel> Courses { get; set; } = null!;
     public DbSet<CourseStudent> CourseStudents { get; set; } = null!;
 
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-    {
-        if (!optionsBuilder.IsConfigured)
-        {
-            optionsBuilder.UseSqlite($"Data Source={FilePath}");
-        }
-    }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
